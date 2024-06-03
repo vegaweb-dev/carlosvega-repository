@@ -1,9 +1,17 @@
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Header from './components/header/Header'
 
 function App() {
   return (
     <>
-      <Header/>
+     <div className="app">
+     <Header/>
+     <Router>
+      <Routes>
+        <Route></Route>
+      </Routes>
+     </Router>
+     </div>
     </>
   )
 }

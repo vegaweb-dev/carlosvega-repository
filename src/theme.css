@@ -12,6 +12,18 @@
 	--box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.6);
 }
 
+*{
+	list-style: none;
+	text-decoration: none;
+}
+
 body {
+	margin: 0;
+	padding: 0;
 	font-family: var(--primary-font-family);
+	color: var(--text-color);
+	background-color: var(--background-color);
+	transition: background-color 0.3s ease, color 0.3s ease;
+	overflow: hidden;
+	box-sizing: border-box;
   }

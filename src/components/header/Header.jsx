@@ -1,8 +1,12 @@
 import React from "react";
 import Switch from "react-switch";
 import "./header.css";
+import { useTheme } from "../../context/useTheme";
+
+
 
 const Header = () => {
+  const {isDarkTheme,toggleTheme} = useTheme()
   return (
     <>
       <div className="nav">
@@ -36,11 +40,12 @@ const Header = () => {
                   width={48}
                   onColor="#4D4D4D"
                   offColor="#ccc"
-                  checked={true}
+                  onChange={toggleTheme}
+                  checked={isDarkTheme}
                 />
               </label>
 
-              <a href="" className="button">
+              <a href="#" className="button">
                 Hire Me
               </a>
             </li>
